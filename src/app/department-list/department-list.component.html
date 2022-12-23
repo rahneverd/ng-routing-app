@@ -1,1 +1,6 @@
-<p>department-list works!</p>
+<ul class="list-group">
+  <li class="list-group-item" style="cursor: pointer;" *ngFor="let department of departments" (click)="onSelect(department)">
+    <span class="btn btn-primary">{{department.id}}</span>
+    <span class="btn">{{department.name}}</span>
+  </li>
+</ul>
